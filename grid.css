@@ -1,0 +1,29 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 200px;
+}
+.grid-container div{
+    background-color: lightskyblue;
+    border: 2px solid blue;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.footer{
+    grid-column-start: 1;
+    grid-column-end:   4;
+}
+.left-nav{
+    grid-row-start: 2;
+    grid-row-end:  4
+}
+.top-article{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+

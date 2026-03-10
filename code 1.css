@@ -1,0 +1,17 @@
+body{
+    background-color: pink;
+}
+header{
+    display: grid;
+    justify-content:  center;
+    background-color: greenyellow;
+    color: black;
+}
+main{
+   display: grid; 
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr;
+}
+.image{
+    justify-content: center;
+}

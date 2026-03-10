@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>AnimeWorld</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #0f0f0f;
+            color: white;
+        }
+
+        .navbar {
+            background: #111;
+        }
+
+        .search-box {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .carousel img {
+            height: 550px;
+            object-fit: cover;
+        }
+
+        .genre-btn {
+            margin: 5px;
+        }
+
+        .anime-card img {
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .anime-card {
+            transition: 0.3s;
+        }
+
+        .anime-card:hover {
+            transform: scale(1.05);
+        }
+
+        .card {
+            background: #1a1a1a;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-dark">
+
+        <div class="container">
+
+            <h3 class="text-warning">AnimeWorld</h3>
+
+            <a href="/asmthome.html" class="btn btn-warning">Login / Sign Up</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- SEARCH -->
+
+    <div class="container mt-4 search-box">
+
+        <input type="text" class="form-control" placeholder="Search Anime">
+
+    </div>
+    <br>
+
+    <!-- CAROUSEL -->
+    <main>
+        <section class="container-lg">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://i.pinimg.com/1200x/59/a1/68/59a168b3fe2528d97c07637c2d19d290.jpg"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>First slide label</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/onepiece.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.pinimg.com/1200x/07/7c/43/077c43086f00584d4084acea2df95736.jpg"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GENRES -->
+
+        <div class="container mt-5">
+
+            <h3>Genres</h3>
+
+            <button class="btn btn-warning genre-btn">Action</button>
+            <button class="btn btn-warning genre-btn">Adventure</button>
+            <button class="btn btn-warning genre-btn">Fantasy</button>
+            <button class="btn btn-warning genre-btn">Romance</button>
+            <button class="btn btn-warning genre-btn">Vampire</button>
+            <button class="btn btn-warning genre-btn">Comedy</button>
+            <button class="btn btn-warning genre-btn">Sci-Fi</button>
+            <button class="btn btn-warning genre-btn">Drama</button>
+
+        </div>
+
+
+        <!-- POPULAR ANIME -->
+
+        <div class="container mt-5">
+
+            <h3 class="mb-4">Popular Anime</h3>
+
+            <div class="row g-4">
+
+
+                <div class="col-md-3">
+
+                    <div class="card anime-card text-white">
+
+                        <img src="https://i.pinimg.com/1200x/4e/d3/a4/4ed3a460de1b556d4a1c5baf7528806a.jpg">
+
+                        <div class="card-body">
+
+                            <h6>Naruto</h6>
+
+                            <p class="small">A young ninja chasing his dream.</p>
+                               <a href="watch.html" class="btn btn-warning btn-sm mt-2">Watch Now</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="card anime-card text-white">
+
+                        <img src="https://i.pinimg.com/736x/d6/db/56/d6db56701eb303d9dd3cddab3afb4701.jpg">
+
+                        <div class="card-body">
+
+                            <h6>Attack on Titan</h6>
+
+                            <p class="small">Humans fight Titans to survive.</p>
+<a href="watch.html" class="btn btn-warning btn-sm mt-2">Watch Now</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="card anime-card text-white">
+
+                        <img src="https://i.pinimg.com/736x/68/2b/90/682b90bd6494f230f9a6e8c70ccdd76b.jpg">
+
+                        <div class="card-body">
+
+                            <h6>Demon Slayer</h6>
+
+                            <p class="small">Tanjiro becomes a demon hunter.</p>
+<a href="watch.html" class="btn btn-warning btn-sm mt-2">Watch Now</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="card anime-card text-white">
+
+                        <img src="https://i.pinimg.com/736x/c9/87/a2/c987a28ac0b72afc74b1984dd7717c2a.jpg">
+
+                        <div class="card-body">
+
+                            <h6>One Piece</h6>
+
+                            <p class="small">Pirates sail the seas searching for treasure.</p>
+<a href="watch.html" class="btn btn-warning btn-sm mt-2">Watch Now</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="card anime-card text-white">
+
+                        <img src="https://i.pinimg.com/736x/52/1b/ee/521beebde26a538eac66856897d88a9b.jpg">
+
+                        <div class="card-body">
+
+                            <h6>Jujutsu Kaisen</h6>
+
+                            <p class="small">Sorcerers battle cursed spirits.</p>
+<a href="watch.html" class="btn btn-warning btn-sm mt-2">Watch Now</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="card anime-card text-white">
+
+                        <img src="https://i.pinimg.com/736x/96/0c/b6/960cb6eb1b70f5f69759dff1c41a561c.jpg">
+                            
+                        <div class="card-body">
+
+                            <h6>Death Note</h6>
+
+                            <p class="small">A notebook that can kill anyone.</p>
+<a href="watch.html" class="btn btn-warning btn-sm mt-2">Watch Now</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="card anime-card text-white">
+
+                        <img src="https://i.pinimg.com/1200x/07/fd/d0/07fdd05893b96683b9855da102e09d16.jpg">
+
+                        <div class="card-body">
+
+                            <h6>Tokyo Ghoul</h6>
+
+                            <p class="small">A college student becomes half-ghoul.</p>
+<a href="watch.html" class="btn btn-warning btn-sm mt-2">Watch Now</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="card anime-card text-white">
+
+                        <img src="https://i.pinimg.com/736x/a2/02/7a/a2027a798710ec7864e36e502e6833d1.jpg">
+
+                        <div class="card-body">
+
+                            <h6>My Hero Academia</h6>
+
+                            <p class="small">A boy trains to become a hero.</p>
+<a href="watch.html" class="btn btn-warning btn-sm mt-2">Watch Now</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- NEXT PAGE -->
+
+        <div class="text-center mt-5 mb-5">
+
+            <a href="/asmthome1.html" class="btn btn-warning btn-lg">Next </a>
+
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
